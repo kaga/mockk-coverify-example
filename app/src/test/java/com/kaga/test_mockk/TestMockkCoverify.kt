@@ -1,6 +1,7 @@
 package com.kaga.test_mockk
 
 import io.mockk.coVerify
+import io.mockk.mockk
 import io.mockk.spyk
 import io.mockk.verify
 import kotlinx.coroutines.delay
@@ -45,6 +46,16 @@ class TestMockkCoverify {
         val spyClass = spyk(ExampleSuspendClass())
         spyClass.execute()
         coVerify(exactly = 1) { spyClass.execute() }
+    }
+
+    /**
+     * coVerify exactly works with mockk, just not spyk
+     */
+    @Test
+    fun `should able to check number of executions with mock`() = runBlocking {
+        val mockClass = mockk<ExampleSuspendClass>(relaxed = true)
+        mockClass.execute()
+        coVerify(exactly = 1) { mockClass.execute() }
     }
 }
 
