@@ -1,8 +1,10 @@
 # Test Mockk CoVerify Example
 
 Example project of testing coVerify feature in [mockk https://mockk.io/](https://mockk.io/).
+Seems to encountered an issue with coVerify expecting number of calls.
 Could possibility related to [this issue](https://github.com/mockk/mockk/issues/554)
 
+[Source file is located here TestMockkCoverify.kt](./app/src/test/java/com/kaga/test_mockk/TestMockkCoverify.kt)
 
 ```kotlin
 /**
