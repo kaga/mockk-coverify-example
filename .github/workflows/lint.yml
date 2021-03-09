@@ -13,7 +13,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: format kotlin
-      run ./gradlew formatKotlin
+      run: ./gradlew formatKotlin
 
     - name: lint kotlin
       run: ./gradlew lintKotlin
