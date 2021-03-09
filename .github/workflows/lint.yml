@@ -11,4 +11,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - run: ./gradlew lintKotlin
+
+    - name: format kotlin
+      run ./gradlew formatKotlin
+
+    - name: lint kotlin
+      run: ./gradlew lintKotlin
+
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v7
+      with:
+        message: '[Github Action - Lint] fix code format'
