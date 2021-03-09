@@ -1,4 +1,5 @@
-# Test Mockk CoVerify Example
+# Test Mockk CoVerify Example [![Lint](https://github.com/kaga/mockk-coverify-example/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/kaga/mockk-coverify-example/actions/workflows/lint.yml) [![Mockk test case](https://github.com/kaga/mockk-coverify-example/actions/workflows/run-unit-test.yml/badge.svg?branch=main)](https://github.com/kaga/mockk-coverify-example/actions/workflows/run-unit-test.yml)
+
 
 Example project of testing coVerify feature in [mockk https://mockk.io/](https://mockk.io/).
 Seems to encountered an issue with coVerify expecting number of calls.
